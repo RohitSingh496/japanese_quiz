@@ -26,9 +26,9 @@ And, here we are ...
    `cat imdb.csv | ./csv2tab > imdb.tsv`
 
 3. 
- :note: - $4 is genre field.
- :note: - $1 is ratings field.
- :note: - $5 is duration field.
+ :memo: - $4 is genre field.
+ :memo: - $1 is ratings field.
+ :memo: - $5 is duration field.
  
  - Separate Movies samples with ratings more than 8.5 .<br>
     `awk -F'\t' '$1>8.5 {print}' imdb.tsv > separated.tsv`
@@ -88,11 +88,11 @@ And, here we are ...
 
     `cat imdb.tsv | awk -F'/t' '$1>8 && $5<150 && ($4 ~ /Crime/ || $4 ~ /Comedy/ || $4 ~ /Adventure/){print}'`
 
-5.Movies with 'Tim Robbins' present as one of the actor
+ - Movies with 'Tim Robbins' present as one of the actor
 
-grep -i "Tim Robbins" imdb.tsv
+    `grep -i "Tim Robbins" imdb.tsv`
 
-#To search in actors field specifically, use awk:
-awk -F'\t' '$6 ~ /Tim Robbins/ {print}' imdb.tsv
+     To search in actors field specifically, use awk:<br>
+    `awk -F'\t' '$6 ~ /Tim Robbins/ {print}' imdb.tsv`
 
 
