@@ -46,7 +46,7 @@ And, here we are ...
      `while IFS= read -r line; do value=$(grep -ic $line imdb.tsv) ; echo "$line | $value" ; done < genrelist`
 
      *The output will look like this:* 
-     <img src="assignment.png" width="600em" height="350em">
+     <img src="output.png" width="518em" height="348em">
 
 ---
  - Find out average ratings and duration of each genre.
