@@ -26,9 +26,9 @@ And, here we are ...
    `cat imdb.csv | ./csv2tab > imdb.tsv`
 
 3. 
- :memo: - $4 is genre field.
- :memo: - $1 is ratings field.
- :memo: - $5 is duration field.
+ - :memo: $4 is genre field.
+ - :memo: $1 is ratings field.
+ - :memo: $5 is duration field.
  
  - Separate Movies samples with ratings more than 8.5 .<br>
     `awk -F'\t' '$1>8.5 {print}' imdb.tsv > separated.tsv`
