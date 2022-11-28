@@ -26,6 +26,10 @@ And, here we are ...
    `cat imdb.csv | ./csv2tab > imdb.tsv`
 
 3. 
+ :note: - $4 is genre field.
+ :note: - $1 is ratings field.
+ :note: - $5 is duration field.
+ 
  - Separate Movies samples with ratings more than 8.5 .<br>
     `awk -F'\t' '$1>8.5 {print}' imdb.tsv > separated.tsv`
 
@@ -71,13 +75,24 @@ And, here we are ...
 	
 	To do this in code...
 	
-	#find the length: 
-	`echo ${#ratings[@]}` <br>
+	find the length : `echo ${#ratings[@]}` <br>
 	which results in 17, this should be same for all 3 arrays, as they all have 17 genre.<br>
+
 	`for i in {0..16}; do
        		echo "scale=2; ${ratings[i]}/${nums[i]}" | bc
-	done`
+	;done`
 	
 	for average Duration replace ratings with durations ,redirect to a text file to keep the data.
+
+ - Movies from Crime, Comedy and Adventure genre having ratings more than 8 and duration less than 150
+
+    `cat imdb.tsv | awk -F'/t' '$1>8 && $5<150 && ($4 ~ /Crime/ || $4 ~ /Comedy/ || $4 ~ /Adventure/){print}'`
+
+5.Movies with 'Tim Robbins' present as one of the actor
+
+grep -i "Tim Robbins" imdb.tsv
+
+#To search in actors field specifically, use awk:
+awk -F'\t' '$6 ~ /Tim Robbins/ {print}' imdb.tsv
 
 
