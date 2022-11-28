@@ -9,7 +9,7 @@
 ---
 
 But, as I am learning about unix/linux.
-:bulb: *An idea struck me!* 
+*I thought...* 
 <br>
 :bulb: **Why not do it on bash?!**
 
