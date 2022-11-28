@@ -45,10 +45,12 @@ And, here we are ...
      Or, to do it all in one go:<br>
      `while IFS= read -r line; do value=$(grep -ic $line imdb.tsv) ; echo "$line | $value" ; done < genrelist`
 
-     *The output will look like this:* 
+     *The output will look like this:*
+
      <img src="output.png" width="400em" height="300em">
 
 ---
+
  - Find out average ratings and duration of each genre.
 
 	Since, we already have the total number of movies in each genre.
@@ -84,9 +86,13 @@ And, here we are ...
 	
 	for average Duration replace ratings with durations ,redirect to a text file to keep the data.
 
+---
+
  - Movies from Crime, Comedy and Adventure genre having ratings more than 8 and duration less than 150
 
     `cat imdb.tsv | awk -F'/t' '$1>8 && $5<150 && ($4 ~ /Crime/ || $4 ~ /Comedy/ || $4 ~ /Adventure/){print}'`
+
+---
 
  - Movies with 'Tim Robbins' present as one of the actor
 
