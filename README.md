@@ -9,8 +9,9 @@
 ---
 
 But, as I am learning about unix/linux.
-:bulb: An idea struck me! :bulb:
-I thought why not do it on bash.
+:bulb: *An idea struck me!* 
+<br>
+:bulb: **Why not do it on bash?!**
 
 And, here we are ...
 
