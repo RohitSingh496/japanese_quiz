@@ -25,10 +25,13 @@ And, here we are ...
    To use the script just cat out the csv and pipe it to the script and save it to a new file: <br>
    `cat imdb.csv | ./csv2tab > imdb.tsv`
 
-3. - Separate Movies samples with ratings more than 8.5 .<br>
+3. 
+ - Separate Movies samples with ratings more than 8.5 .<br>
     `awk -F'\t' '$1>8.5 {print}' imdb.tsv > separated.tsv`
- 
-   - Number of Movies in each genre?<br>
+
+---
+
+ - Number of Movies in each genre?<br>
      Get a list of all the genre and save to genrelist txt file:  <br>
      `awk -F'\t' '{print $4}' imdb.tsv | sort | uniq > genrelist`
  
@@ -40,8 +43,9 @@ And, here we are ...
 
      *The output will look like this:* 
      <img src="assignment.png" width="600em" height="350em">
-   
-   - Find out average ratings and duration of each genre.
+
+---
+ - Find out average ratings and duration of each genre.
 
 	Since, we already have the total number of movies in each genre.
 	To find average ratings and duration, we just need to find the sum of ratings and duration in each genre.
@@ -64,4 +68,16 @@ And, here we are ...
 	`mapfile -t nums < genreSums.txt` <br>
 
 	now, average = ratings/nums or durations/nums respectively.
+	
+	To do this in code...
+	
+	#find the length: 
+	`echo ${#ratings[@]}` <br>
+	which results in 17, this should be same for all 3 arrays, as they all have 17 genre.<br>
+	`for i in {0..16}; do
+       		echo "scale=2; ${ratings[i]}/${nums[i]}" | bc
+	done`
+	
+	for average Duration replace ratings with durations ,redirect to a text file to keep the data.
+
 
