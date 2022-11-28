@@ -58,10 +58,10 @@ And, here we are ...
 	Same for duration:(the fifth field) , save the durationSum in a duration.txt file. <br>
 	`while IFS= read -r genre;do grep -i "$genre" imdb.tsv | awk -F'\t' -v sum=0 'sum+=$5{} END{print sum}'; done <genrelist >duration.txt`
 	
-	Now to find the average, we create 3 arrays, 1 from rating.txt, 2 from duration.txt and 3 from genreSum.txt
-	`mapfile -t ratings < rating.txt`
-	`mapfile -t durations < duration.txt`
-	`mapfile -t nums < genreSums.txt`
+	Now to find the average, we create 3 arrays, 1 from rating.txt, 2 from duration.txt and 3 from genreSum.txt <br>
+	`mapfile -t ratings < rating.txt` <br>
+	`mapfile -t durations < duration.txt` <br>
+	`mapfile -t nums < genreSums.txt` <br>
 
 	now, average = ratings/nums or durations/nums respectively.
 
