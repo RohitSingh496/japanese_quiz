@@ -21,7 +21,7 @@ And, here we are ...
    As for why csv files don't work very well with awk or sed.[See Here](#myHeading)
 
 2. Now, to convert a csv to tsv, you can use your spreadsheet software or cli tool. In my case,
-   I used a simple python script with csv module. [Link Here](https://github.com/RohitSingh496/playingwith-csvfiles/csv2tab)
+   I used a simple python script with csv module. [Link Here](https://github.com/RohitSingh496/playingwith-csvfiles/blob/master/csv2tab)
 
 3. 
 
