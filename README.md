@@ -13,5 +13,5 @@ But, as I am learning about unix/linux.
 I thought why not do it on bash.
 
 And, here we are 4<sup>th</sup> ...
-[myLink]{https://rohitknows.github.io}
+[myLink](https://rohitknows.github.io)
 
