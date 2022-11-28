@@ -37,6 +37,31 @@ And, here we are ...
  
      Or, to do it all in one go:<br>
      `while IFS= read -r line; do value=$(grep -ic $line imdb.tsv) ; echo "$line | $value" ; done < genrelist`
- 
-4.
+
+     *The output will look like this:* 
+     <img src="assignment.png" width="600em" height="350em">
+   
+   - Find out average ratings and duration of each genre.
+
+	Since, we already have the total number of movies in each genre.
+	To find average ratings and duration, we just need to find the sum of ratings and duration in each genre.
+	And, divide by the total number of movies in the respective genre.
+
+	To find sum of ratings:<br>
+	`grep -i 'Genre' imdb.tsv| awk -F't' -v sum=0 'sum+=$1{} END {print sum}'`
+
+	Now, instead of manually inputting each genre, we can use the genrelist file which has all the genre names inside a while loop
+	and store in a rating.txt file for further use.
+
+	`while IFS= read -r genre;do grep -i "$genre" imdb.tsv | awk -F'\t' -v sum=0 'sum+=$1{} END{print sum}'; done <genrelist >rating.txt`
+
+	Same for duration:(the fifth field) , save the durationSum in a duration.txt file. <br>
+	`while IFS= read -r genre;do grep -i "$genre" imdb.tsv | awk -F'\t' -v sum=0 'sum+=$5{} END{print sum}'; done <genrelist >duration.txt`
+	
+	Now to find the average, we create 3 arrays, 1 from rating.txt, 2 from duration.txt and 3 from genreSum.txt
+	`mapfile -t ratings < rating.txt`
+	`mapfile -t durations < duration.txt`
+	`mapfile -t nums < genreSums.txt`
+
+	now, average = ratings/nums or durations/nums respectively.
 
