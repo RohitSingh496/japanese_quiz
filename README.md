@@ -4,7 +4,7 @@
 
 *You can see the assignment below :*
 
-<img src="assignment.png" width="600em" height="350em">
+<img src="./assets/images/assignment.png" width="600em" height="350em">
 
 ---
 
@@ -47,7 +47,7 @@ And, here we are ...
 
      *The output will look like this:*
 
-     <img src="output.png" width="400em" height="300em">
+<img src="assets/images/output.png" width="400em" height="300em">
 
 ---
 
