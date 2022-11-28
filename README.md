@@ -1,6 +1,6 @@
 ### Playing with .csv files
 
-**I was given an assignment, I had to use pandas to extract some info from a imdb.csv file. **
+**I was given an assignment, I had to use pandas to extract some info from a imdb.csv file.**
 
 *You can see the assignment below :*
 
