@@ -22,7 +22,7 @@ And, here we are ...
 
 2. Now, to convert a csv to tsv, you can use your spreadsheet software or cli tool. In my case,
    I used a simple python script with csv module. [Link Here](https://github.com/RohitSingh496/playingwith-csvfiles/blob/master/csv2tab) <br>
-   To use the script just cat out the csv and pipe it to the script and save it to a new file:
+   To use the script just cat out the csv and pipe it to the script and save it to a new file: <br>
    `cat imdb.csv | ./csv2tab > imdb.tsv`
 3. 
 
