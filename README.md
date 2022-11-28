@@ -24,7 +24,20 @@ And, here we are ...
    I used a simple python script with csv module. [Link Here](https://github.com/RohitSingh496/playingwith-csvfiles/blob/master/csv2tab) <br>
    To use the script just cat out the csv and pipe it to the script and save it to a new file: <br>
    `cat imdb.csv | ./csv2tab > imdb.tsv`
-3. 
 
+3. - Separate Movies samples with ratings more than 8.5 .
+    `awk -F'\t' '$1>8.5 {print}' imdb.tsv > separated.tsv`
+ 
+   - Number of Movies in each genre?
+ 
+     Get a list of all the genre and save to genrelist txt file:
+     `awk -F'\t' '{print $4}' imdb.tsv | sort | uniq > genrelist`
+ 
+     Now, count movies in each genre.
+     `grep -ic 'Genre' imdb.tsv`
+ 
+     Or, to do it all in one go:
+     `while IFS= read -r line; do value=$(grep -ic $line imdb.tsv) ; echo "$line | $value" ; done < genrelist`
+ 
 
 
