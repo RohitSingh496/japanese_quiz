@@ -1,4 +1,4 @@
-### Playing with .csv files {#heading-Id}
+<h3 id="myHeading">Playing with .csv files </h3>
 
 **I was given an assignment, I had to use pandas to extract some info from a imdb.csv file.**
 
@@ -13,5 +13,5 @@ But, as I am learning about unix/linux.
 I thought why not do it on bash.
 
 And, here we are 4<sup>th</sup> ...
-[myLink](#heading-Id)
+[myLink](#myHeading)
 
