@@ -17,14 +17,19 @@ And, here we are ...
 
 Here are some links:
 <br>
-genAnswers.sh
-: Bash script to generated all answers in one go.
+
+---
+
+*genAnswers.sh*
+:Bash script to generated all answers in one go.
 <br>
 To execute the script, type in your terminal:
 <br>
 `./genAnswers.sh`
-<br>
+<br><br>
 :memo: The script requires the imdb.csv and csv2tab files. Download them [here.](./)
+
+---
 
 <h4 id="">The steps I followed were: </h4>
 
