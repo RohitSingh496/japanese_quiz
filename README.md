@@ -19,7 +19,7 @@ And, here we are ...
 
 Before going through the steps, here are some links:
 <br>
-**[genAnswers.sh](https://github.com/RohitSingh496/playingwith-csvfiles/)**
+**[genAnswers.sh](https://github.com/RohitSingh496/playingwith-csvfiles/blob/master/genAnswers.sh)**
 - Bash script to generate all answers in one go.
 
 To execute the script, type in your terminal:
