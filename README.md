@@ -20,13 +20,19 @@ And, here we are ...
 Here are some links:
 <br>
 **[genAnswers.sh](https://github.com/RohitSingh496/playingwith-csvfiles/)**
-- Bash script to generated all answers in one go.
+- Bash script to generate all answers in one go.
 
 To execute the script, type in your terminal:
 
 ` bash genAnswers.sh `
 
-:memo: The script requires the imdb.csv and csv2tab files. Download them [here.](./)
+:memo: The script requires the imdb.csv and csv2tab files to be in the same directory. Download them [here.](https://github.com/RohitSingh496/playingwith-csvfiles/)
+
+If you want to test or edit something, you can clone the project via: 
+- Download and extract the zip, or
+- just type in you terminal:
+
+` git clone https://github.com/RohitSingh496/playingwith-csvfiles.git `
 
 ---
 
