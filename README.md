@@ -123,4 +123,10 @@ If you want to test or edit something, you can clone the project via:
      To search in actors field specifically, use awk:<br>
     `awk -F'\t' '$6 ~ /Tim Robbins/ {print}' imdb.tsv`
 
+---
+
+*Note that, there might be ways to improve the script, I have just started with unix tools and
+<br> for data analysis, pandas is way better as it is tailored for huge datasets*
+
+~~Though, I still like bash for playing around with files~~
 
