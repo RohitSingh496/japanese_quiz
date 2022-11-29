@@ -20,7 +20,8 @@ And, here we are ...
 Here are some links:
 <br>
 **genAnswers.sh**
-:Bash script to generated all answers in one go.
+
+- Bash script to generated all answers in one go.
 <br>
 To execute the script, type in your terminal:
 <br>
