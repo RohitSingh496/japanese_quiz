@@ -25,13 +25,13 @@ mapfile -t avgR < avgRatings.txt
 mapfile -t avgD < avgDurations.txt
 mapfile -t genre < genrelist
 
-echo "genre|noOfMovies|avgRatings|avgDurations" > ./assets/answers/ans2_3.txt
-for i in {0..16}; do echo "${genre[i]}|${nums[i]}|${avgR[i]}|${avgD[i]}";done >> ./assets/answers/ans2_3.txt
+echo "genre|noOfMovies|avgRatings|avgDurations" > ./assets/answers/ans2_3.csv
+for i in {0..16}; do echo "${genre[i]}|${nums[i]}|${avgR[i]}|${avgD[i]}";done >> ./assets/answers/ans2_3.csv
 #Ans-4
-cat imdb.tsv | awk -F'\t' '$1>8 && $5<150 && ($4 ~ /Crime/ || $4 ~ /Comedy/ || $4 ~ /Adventure/){print}' > ./assets/answers/ans4.txt
+cat imdb.tsv | awk -F'\t' '$1>8 && $5<150 && ($4 ~ /Crime/ || $4 ~ /Comedy/ || $4 ~ /Adventure/){print}' > ./assets/answers/ans4.tsv
 
 #Ans-5
-awk -F'\t' '$6 ~ /Tim Robbins/ {print}' imdb.tsv > ./assets/answers/ans5.txt
+awk -F'\t' '$6 ~ /Tim Robbins/ {print}' imdb.tsv > ./assets/answers/ans5.tsv
 
 #Removing_extra_files
 rm avgRatings.txt avgDurations.txt rating.txt duration.txt genreSums.txt
