@@ -15,12 +15,13 @@ But, as I am learning about unix/linux.
 
 And, here we are ...
 
-Here are some links:
 <br>
 
 ---
 
-*genAnswers.sh*
+
+Here are some links:
+**genAnswers.sh**
 :Bash script to generated all answers in one go.
 <br>
 To execute the script, type in your terminal:
