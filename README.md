@@ -15,6 +15,16 @@ But, as I am learning about unix/linux.
 
 And, here we are ...
 
+Here are some links:
+genAnswers.sh
+: Bash script to generated all answers in one go.
+<br>
+To execute the script, type in your terminal:
+<br>
+`./genAnswers.sh`
+<br>
+:memo: The script requires the imdb.csv and csv2tab files. Download them [here.](./)
+
 <h4 id="">The steps I followed were: </h4>
 
 1. Since, files separated by comma(,) are hard to use with commands like awk or sed.
