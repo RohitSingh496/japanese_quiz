@@ -24,8 +24,8 @@ Here are some links:
 <br>
 To execute the script, type in your terminal:
 <br>
-
 ` bash genAnswers.sh `
+
 :memo: The script requires the imdb.csv and csv2tab files. Download them [here.](./)
 
 ---
