@@ -1,5 +1,8 @@
 #!/bin/bash
 
+#deleteOldAnswers
+rm -r ./assets/answers/*
+
 cat imdb.csv | ./csv2tab > imdb.tsv
 
 #Ans-1
