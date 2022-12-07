@@ -4,7 +4,7 @@
 
 *You can see the assignment below :*
 
-<img src="./assets/images/assignment.png" width="600em" height="350em">
+<img src="https://0x0.st/odqf.png" width="600em" height="350em">
 
 ---
 
@@ -69,7 +69,7 @@ If you want to test or edit something, you can clone the project via:
 
      *The output will look like this:*
 
-<img src="assets/images/output.png" width="400em" height="300em">
+<img src="https://0x0.st/odbr.png" width="400em" height="300em">
 
 ---
 
